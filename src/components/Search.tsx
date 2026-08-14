@@ -1,6 +1,12 @@
 import { CiSearch } from "react-icons/ci";
 
-function Search({ value, setValue }: { value: string; setValue: any }) {
+function Search({
+  value,
+  setValue,
+}: {
+  value: string;
+  setValue: (value: string) => void;
+}) {
   return (
     <div className="relative p-2 rounded-md border border-gray-200">
       <CiSearch
